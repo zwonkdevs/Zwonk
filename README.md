@@ -2,7 +2,7 @@
 
 **Solana meme token emotional sentiment engine.**
 
-`$ZWONK` — `pip install zwonk`
+`$ZWONK` — `3CZvoRPEyZ3QpXUQb3i1iw3rVWdkqgmWDDRVypP4pump` — `pip install zwonk`
 
 ---
 
