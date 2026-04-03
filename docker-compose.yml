@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  zwonk:
+    build: .
+    volumes:
+      - .:/app
+    command: pytest tests/ -v
+
+  dashboard:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - ./dashboard:/app
+    ports:
+      - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host"
